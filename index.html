@@ -7,6 +7,150 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         
+        /* UM6P Logo Styling */
+        .um6p-logo {
+            position: fixed;
+            top: 3vmin;
+            left: 1vmin;
+            z-index: 1000;
+            display: flex;
+            gap: 0.5vmin;
+            pointer-events: none;
+        }
+        
+        .um6p-logo .letter {
+            display: inline-block;
+            width: 3vmin;
+            height: 3vmin;
+            background: #FF6B35;
+            color: white;
+            font-weight: 800;
+            font-size: 2vmin;
+            text-align: center;
+            line-height: 3vmin;
+            border-radius: 0px;
+            box-shadow: 0 0.125vmin 0.5vmin rgba(255, 107, 53, 0.3);
+            transition: all 0.3s ease;
+            pointer-events: auto;
+        }
+        
+        .um6p-logo .letter:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4);
+        }
+        
+        /* Orange Pipe Separator */
+        .logo-separator {
+            position: fixed;
+            top: 3vmin;
+            left: 15.5vmin;
+            z-index: 1000;
+            width: 0.1875vmin;
+            height: 3vmin;
+            background: #FF6B35;
+            border-radius: 0px;
+        }
+        
+        /* SOLE Logo Styling */
+        .sole-logo {
+            position: fixed;
+            top: 3vmin;
+            left: 16.5vmin;
+            z-index: 1000;
+            display: flex;
+            gap: 0.25vmin;
+            pointer-events: none;
+        }
+        
+        .sole-logo .letter {
+            display: inline-block;
+            width: 1.875vmin;
+            height: 1.875vmin;
+            background: #3b82f6;
+            color: white;
+            font-weight: 800;
+            font-size: 1.25vmin;
+            text-align: center;
+            line-height: 1.875vmin;
+            border-radius: 0px;
+            box-shadow: 0 0.125vmin 0.5vmin rgba(59, 130, 246, 0.3);
+            transition: all 0.3s ease;
+            pointer-events: auto;
+        }
+        
+        .sole-logo .letter:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+        }
+        
+        /* SOLE Description Text */
+        .sole-description {
+            position: fixed;
+            top: 5.5vmin;
+            left: 16.5vmin;
+            z-index: 1000;
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.8vmin;
+            font-weight: 400;
+            line-height: 1.2;
+            width: 15vmin;
+            white-space: nowrap;
+        }
+        
+        .sole-description .line1 {
+            display: block;
+            margin-bottom: 0.2vmin;
+        }
+        
+        .sole-description .line2 {
+            display: block;
+        }
+        
+        /* Leet Horizon Picture Styling */
+        .leet-horizon-logo {
+            position: fixed;
+            top: 1vmin;
+            left: 184vmin;
+            z-index: 1000;
+            pointer-events: auto;
+        }
+        
+        .leet-horizon-logo img {
+            width: 12vmin;
+            height: 9vmin;
+            object-fit: contain;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 0.125vmin 0.5vmin rgba(0, 0, 0, 0.3));
+        }
+        
+        .leet-horizon-logo img:hover {
+            transform: translateY(-0.125vmin);
+            filter: drop-shadow(0 0.25vmin 0.75vmin rgba(0, 0, 0, 0.4));
+        }
+        
+        /* Collaborator Logo Styling */
+        .collaborator-logo {
+            position: fixed;
+            top: 0.1vmin;
+            left: 182vmin;
+            z-index: 1000;
+            pointer-events: auto;
+        }
+        
+        .collaborator-logo img {
+            width: 14vmin;
+            height: 8vmin;
+            object-fit: contain;
+            transition: all 0.3s ease;
+            filter: drop-shadow(0 0.125vmin 0.5vmin rgba(0, 0, 0, 0.3));
+        }
+        
+        .collaborator-logo img:hover {
+            transform: translateY(-0.125vmin);
+            filter: drop-shadow(0 0.25vmin 0.75vmin rgba(0, 0, 0, 0.4));
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -475,6 +619,36 @@
     </style>
 </head>
 <body>
+    <!-- UM6P Logo -->
+    <div class="um6p-logo">
+        <span class="letter">U</span>
+        <span class="letter">M</span>
+        <span class="letter">6</span>
+        <span class="letter">P</span>
+    </div>
+    
+    <!-- Orange Pipe Separator -->
+    <div class="logo-separator"></div>
+    
+    <!-- SOLE Logo -->
+    <div class="sole-logo">
+        <span class="letter">S</span>
+        <span class="letter">O</span>
+        <span class="letter">L</span>
+        <span class="letter">E</span>
+    </div>
+    
+    <!-- SOLE Description -->
+    <div class="sole-description">
+        <span class="line1">Student Organizations, Leadership</span>
+        <span class="line2">& Engagement</span>
+    </div>
+    
+    <!-- Leet Horizon Picture -->
+    <div class="leet-horizon-logo">
+        <img src="https://img.notionusercontent.com/s3/prod-files-secure%2Fd2380020-853b-81b2-9612-000328f81747%2F2f0187ff-3ab1-468f-af9d-35201793d610%2Fclub2.png/size/w=1420?exp=1756767156&sig=JZJIeMbmbtyRjouINMhReOb86F-LxlSVzxRSen2Fz0w&id=25f80020-853b-804e-9c02-df695dc9f66f&table=block" alt="Leet Horizon Logo">
+    </div>
+    
     <div class="floating-elements"></div>
     <div class="container">
         <div class="header">
